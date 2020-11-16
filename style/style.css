@@ -1,0 +1,301 @@
+html, body {
+background: url("../images/camo_bg.jpg") no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+background-size: cover;
+-o-background-size: cover;
+
+height: 100%;
+margin: 0;
+}
+
+.anotherBody {
+    background: url("../images/graf_bg_blur.jpg") no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+background-size: cover;
+-o-background-size: cover;
+}
+
+/*I have barely used IDs in this assignment and more of Classes, IDs tend to block out all of the style you're using.*/
+#halfER {
+    color: #E8CF00;
+}
+/*Background color code: #2E2E2E*/
+
+@font-face {
+  font-family: 'A Drip';
+  src: url('adrip1.ttf');
+}
+
+hr.style-rainbow {
+border: 0;
+height: 4px;
+background: #ff0000;
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ff0000), color-stop(25%,#ffff00), color-stop(50%,#00ff00), color-stop(75%,#00ffff), color-stop(100%,#0000ff));
+background: -webkit-linear-gradient(-45deg, #ff0000 0%,#ffff00 25%,#00ff00 50%,#00ffff 75%,#0000ff 100%);
+background: -moz-linear-gradient(-45deg, #ff0000 0%, #ffff00 25%, #00ff00 50%, #00ffff 75%, #0000ff 100%);
+background: -o-linear-gradient(-45deg, #ff0000 0%,#ffff00 25%,#00ff00 50%,#00ffff 75%,#0000ff 100%);
+background: -ms-linear-gradient(-45deg, #ff0000 0%,#ffff00 25%,#00ff00 50%,#00ffff 75%,#0000ff 100%);
+background: linear-gradient(-45deg, #ff0000 0%,#ffff00 25%,#00ff00 50%,#00ffff 75%,#0000ff 100%);
+
+}
+
+.carousel-item {
+    height: 650px;
+    width: 400px;
+}
+
+.carousel-inner {
+    float: center;
+    text-align: center;
+}
+
+.carousel_box {
+float: center;
+background: black;
+padding: 40px;
+background: rgba(0, 0, 0, 0.6);
+margin: 20px;
+overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  .animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform:translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
+
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+
+
+.footer {
+  position: inherit;
+  right: 0;
+  bottom: 0;
+  left: 0;
+    padding: 0.1rem;
+  background-color: #2E2E2E;
+  text-align: center;
+}
+
+.footer_pages {
+  position: inherit;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #2E2E2E;
+  text-align: center;
+  padding: 1rem;
+}
+
+.btn {
+  padding: 5px 8px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.btn:hover {
+transition: 0.5s;
+transform: rotate(360deg);
+}
+
+.btn:active {
+transition: 0.2s;
+transform: translateY(5px);
+}
+
+.lg:hover {
+transition: 0.5s;
+transform: rotateY(360deg);
+}
+
+.lg:active {
+transition: 0.2s;
+transform: translateY(5px);
+}
+
+.lg {
+  cursor: pointer;
+  transition: 1s;
+}
+
+.button {
+  color: white;
+  background: black;
+  border-radius: 50%;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button:hover {
+    transform: translateY(-3.5px);
+    background-color: #FFDC00;
+    color: black;
+    transition-duration: 0.4s;
+}
+
+.button:active {
+    transform: translateY(3.5px);
+    background-color: #CDB100;
+    transition-duration: 0.4s;
+    color: black;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  transition: 0.2s;
+}
+
+::-webkit-scrollbar-track {
+  background: #525252;
+  transition: 0.5s;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #E8CF00; 
+  transition: 0.5s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFE400;
+  transition: 0.5s;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #B7A300;
+  transition: 0.5s;
+}
+
+.blockquote {
+    text-align: center;
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.container {
+  display: block;
+  width: 100%;
+}
+
+/*first element*/
+
+.container .card:first-child {
+  margin-left: 0;
+}
+
+
+/*last element of the first row*/
+
+.container .card:nth-child(5n) {
+  margin-right: 0;
+}
+
+
+/*first-element of the 2nd row*/
+
+.container .card:nth-child(5n+1) {
+  margin-left: 0;
+}
+
+
+/*last element*/
+
+.container .card:last-child {
+  margin-right: 0;
+}
+
+.card {
+
+  max-width: 300px;
+  margin: 20px;
+  color: black;
+  float: left;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.bordered {
+    border-radius: 20px;
+}
+
+.carousel-control.left {
+    margin-left: -40px;
+    width:20%;
+    height: auto;
+    background:none;
+}
+.carousel-control.right {
+    margin-right: -20px; 
+    width:20%;
+    height: auto;   
+    background:none;
+}
